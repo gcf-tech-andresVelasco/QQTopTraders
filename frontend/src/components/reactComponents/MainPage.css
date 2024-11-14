@@ -1,0 +1,29 @@
+/* Alinear el menú de navegación en línea y hacia la izquierda */
+.nav-menu {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* Estilos básicos para los elementos de navegación */
+.nav-menu__item {
+  margin-right: 20px;
+}
+
+.nav-menu__item a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+  transition: border-color 0.3s;
+}
+
+/* Resalta el enlace activo con una línea */
+.nav-menu__item a.active {
+  border-bottom: 2px solid #007bff; /* Cambia el color de la línea según desees */
+  color: #007bff; /* Cambia el color del texto según desees */
+}
+

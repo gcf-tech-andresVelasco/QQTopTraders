@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import PrincipalChar from "../components/reactComponents/PrincipalChar";
+import MainPage from "../components/reactComponents/MainPage";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,34 +13,8 @@ import PrincipalChar from "../components/reactComponents/PrincipalChar";
       una cuenta y empezar a operar.
       <br /><strong> Mucha suerte!</strong>
     </p>
-    <div class="grid-data">
-      <ul role="list" class="link-card-flex">
-        
-        <Card
-          href="https://docs.astro.build/"
-          title="Documentation"
-          body="Learn how Astro works and explore the official API docs."
-        />
-        <Card
-          href="https://astro.build/integrations/"
-          title="Integrations"
-          body="Supercharge your project with new frameworks and libraries."
-        />
-        <Card
-          href="https://astro.build/themes/"
-          title="Themes"
-          body="Explore a galaxy of community-built starter themes."
-        />
-        <Card
-          href="https://astro.build/chat/"
-          title="Community"
-          body="Come say hi to our amazing Discord community. ❤️"
-        />
-      </ul>
-      <div class="colored-box">
-        <PrincipalChar client:visible/>
-      </div>
-    </div>
+    <MainPage client:visible/>
+    
   </main>
 </Layout>
 
@@ -93,13 +68,7 @@ import PrincipalChar from "../components/reactComponents/PrincipalChar";
   .instructions strong {
     color: rgb(var(--accent-light));
   }
-  .grid-data {
-    display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
-    grid-template-columns: 1fr 2fr;
-    gap: 1rem;
-    width: 100%;
-  }
+
   .link-card-flex {
     display: flex;
     flex-direction: column;

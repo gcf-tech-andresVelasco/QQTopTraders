@@ -4,7 +4,7 @@ import Summaries from "./Summaries";
 import "./MainPage.css";
 
 export default function MainPage() {
-  const [page, setPage] = useState("summaries");
+  const [page, setPage] = useState("overview");
 
   return (
     <>

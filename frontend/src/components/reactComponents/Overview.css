@@ -1,17 +1,39 @@
 .grid-data {
+  margin: 1rem 0px;
   display: grid;
   /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   gap: 1rem;
   width: 100%;
 }
 
 .table-title{
+  padding: 0px 1rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  background-color: #01043c;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
 }
 
 table {
+  
   width: 100%;
   border-collapse: collapse;
+}
+
+.grid-data table th {
+  padding: 0px 1rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+.grid-data table td {
+  padding: 0px 1rem;
+  text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
 }

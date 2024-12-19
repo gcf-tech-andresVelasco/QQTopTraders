@@ -37,3 +37,10 @@ table {
 tbody tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
+
+@media screen and (max-width: 600px) {
+  .grid-data {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}

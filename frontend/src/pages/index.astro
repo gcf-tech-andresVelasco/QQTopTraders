@@ -9,9 +9,8 @@ import MainPage from "../components/reactComponents/MainPage";
   <main>
     <h1>Bienvenido a <span class="text-gradient">QQ Global Group</span></h1>
     <p class="instructions">
-      Descubre si estas entre los mejores tradesrs de QQ, solo tienes que tener
+      Mira el rendimiento de tu cuenta a lo largo del mas solo tienes que tener
       una cuenta y empezar a operar.
-      <br /><strong> Mucha suerte!</strong>
     </p>
     <MainPage client:visible/>
     
@@ -80,5 +79,11 @@ import MainPage from "../components/reactComponents/MainPage";
     background: rgba(var(--accent), 0.1);
     border: 1px solid rgba(var(--accent), 0.2);
     border-radius: 8px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1{
+      font-size: 3rem;
+    }
   }
 </style>

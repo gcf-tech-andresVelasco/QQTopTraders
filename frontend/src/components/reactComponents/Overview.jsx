@@ -45,6 +45,7 @@ export default function Overview() {
         <option value={10003}>10003</option>
         <option value={10002}>10002</option>
         <option value={10021}>10021</option>
+        <option value={10240}>10240</option>
         {/* <option value={2}>Equity</option> */}
       </select>
         <div className="table-title">

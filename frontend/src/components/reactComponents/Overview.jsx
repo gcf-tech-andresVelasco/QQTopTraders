@@ -76,6 +76,30 @@ export default function Overview() {
             </tr>
           </tbody>
         </table>
+        <br />
+        <div className="table-title">
+          <h3>Estados</h3>
+        </div>
+        <table>
+          <tbody>
+            <tr className="table">
+              <th scope="row">Retornos totales</th>
+              <td>{data ? format(data.balance) : 0}</td>
+            </tr>
+            <tr>
+              <th scope="row">Retorno Mensual</th>
+              <td>{data ? format(data.profit) : 0}</td>
+            </tr>
+            <tr>
+              <th scope="row">Retorno Semanal</th>
+              <td>{data ? format(data.equity) : 0}</td>
+            </tr>
+            <tr>
+              <th scope="row">DrawnDown</th>
+              <td>{data ? format(data.margin) : 0}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div className="colored-box">
         <CharSelector

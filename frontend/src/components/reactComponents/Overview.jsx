@@ -29,6 +29,7 @@ export default function Overview() {
       .then((response) => response.json())
       .then((json) => {
         let obj = JSON.parse(json);
+        console.log(obj);
         setData(obj);
       });
   }
@@ -59,7 +60,7 @@ export default function Overview() {
               <td>{data ? format(data.balance) : 0}</td>
             </tr>
             <tr>
-              <th scope="row">Profit del último día</th>
+              <th scope="row">Profit</th>
               <td>{data ? format(data.profit) : 0}</td>
             </tr>
             <tr>
@@ -67,31 +68,31 @@ export default function Overview() {
               <td>{data ? format(data.equity) : 0}</td>
             </tr>
             <tr>
-              <th scope="row">Margen</th>
+              <th scope="row">Margin</th>
               <td>{data ? format(data.margin) : 0}</td>
             </tr>
             <tr>
-              <th scope="row">Margen libre</th>
+              <th scope="row">Free Margin</th>
               <td>{data ? format(data.MarginFree) : 0}</td>
             </tr>
           </tbody>
         </table>
         <br />
         <div className="table-title">
-          <h3>Estados</h3>
+          <h3>States</h3>
         </div>
         <table>
           <tbody>
             <tr className="table">
-              <th scope="row">Retornos totales</th>
+              <th scope="row">Total income</th>
               <td>{data ? format(data.balance) : 0}</td>
             </tr>
             <tr>
-              <th scope="row">Retorno Mensual</th>
+              <th scope="row">Monthly income</th>
               <td>{data ? format(data.profit) : 0}</td>
             </tr>
             <tr>
-              <th scope="row">Retorno Semanal</th>
+              <th scope="row">Weekly Income</th>
               <td>{data ? format(data.equity) : 0}</td>
             </tr>
             <tr>
